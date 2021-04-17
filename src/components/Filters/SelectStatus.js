@@ -7,7 +7,7 @@ const SelectStatus = () => {
   useEffect(() => {
     axios
       .get(
-        "http://localhost:4000/allStatus",
+        "https://covid-tracker-api-21.herokuapp.com/allStatus",
         {},
         {
           "Content-Type": "application/json",

@@ -96,7 +96,7 @@ export const CovidContextProvider = (props) => {
     axios
       .request({
         method: "GET",
-        url: "http://localhost:4000/data",
+        url: "https://covid-tracker-api-21.herokuapp.com/data",
         params: obj,
         headers: {
           "Content-Type": "application/json",

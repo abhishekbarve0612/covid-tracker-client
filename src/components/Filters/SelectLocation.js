@@ -8,7 +8,7 @@ const SelectLocation = () => {
   useEffect(() => {
     axios
       .get(
-        "http://localhost:4000/allStates",
+        "https://covid-tracker-api-21.herokuapp.com/allStates",
         {},
         {
           "Content-Type": "application/json",

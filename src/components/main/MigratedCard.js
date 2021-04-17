@@ -35,7 +35,7 @@ const MigratedCard = () => {
     axios
       .request({
         method: "GET",
-        url: "http://localhost:4000/data",
+        url: "https://covid-tracker-api-21.herokuapp.com/data",
         params: {
           FromDate: data.FromDate,
           ToDate: data.ToDate,
