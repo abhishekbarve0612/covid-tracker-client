@@ -1,24 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import Head from "./components/Filters/Head";
+import Main from "./components/main/Main";
+import { CovidContextProvider } from "./Contexts/CovidContext";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <CovidContextProvider>
+      <div className="App">
+        <header className="App-header">
+          <Head />
+        </header>
+        <Main />
+      </div>
+    </CovidContextProvider>
   );
 }
 
